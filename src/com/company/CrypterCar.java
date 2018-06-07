@@ -1,5 +1,8 @@
 package com.company;
 
+import java.util.Collection;
+import java.util.HashSet;
+import java.util.Iterator;
 import java.util.Set;
 
 enum Direction{
@@ -14,9 +17,19 @@ public class CrypterCar {
     public int xBound;
     public int yBound;
     public boolean isBlocked = false;
-    public Set<IntPair> visitedPositions;
 
-    public CrypterCar(String plainText, boolean isRotateRight, int xbound, int ybound){
+    public Set<IntPair> visitedPositions = new HashSet<IntPair>(){
+        @Override
+        public boolean contains(Object o) {
+
+            return super.contains(o);
+        }
+    };
+
+    public int totalPositions;
+
+    public CrypterCar(boolean isRotateRight, int xbound, int ybound){
+        totalPositions = xbound*ybound;
         if(isRotateRight){
             dir = Direction.s;
         }
@@ -26,16 +39,15 @@ public class CrypterCar {
         this.xBound = xbound;
         this.yBound = ybound;
 
-        xPos = xBound;//set top right
+        xPos = xBound-1;//set top right
         yPos = 0;
         IntPair posPair = new IntPair(xPos, yPos);
         visitedPositions.add(posPair);
     }
     public void moveRotateRight(){
 
-
-        if(isBlocked!=false) {
-            IntPair testPos = new IntPair();
+        IntPair testPos = new IntPair(-1,-1);
+        if(isBlocked==false) {
             switch (dir) {
                 case s:
                     testPos.x = this.xPos;
@@ -85,22 +97,25 @@ public class CrypterCar {
         }
         else{
 
+
             switch(dir){
                 case s:
+                    dir = Direction.w;
                     break;
                 case e:
+                    dir = Direction.s;
                     break;
                 case n:
+                    dir = Direction.e;
                     break;
                 case w:
+                    dir = Direction.n;
                     break;
             }
+            this.isBlocked = false;
+
 
         }
-
-
-
-
     }
 
 }

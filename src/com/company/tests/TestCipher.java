@@ -22,4 +22,23 @@ public class TestCipher {
         assertEquals("WEAREDISCOVEREDFLEEATONCE",testCipher.plainText);
 
     }
+
+    @Test
+    public void TestCrypterCarSet(){
+        CrypterCar car = new CrypterCar(true,2,2);
+
+        IntPair testPair = new IntPair(1,1);
+        car.visitedPositions.add(testPair);
+        assertTrue(car.visitedPositions.contains(testPair));
+
+
+        car.moveRotateRight();
+
+        testPair.y = 1;
+        testPair.x = 1;
+        assertTrue(car.visitedPositions.contains(testPair));
+        assertEquals(2,car.visitedPositions.size());
+    }
+
+
 }

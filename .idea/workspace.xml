@@ -2,12 +2,13 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="40296a55-87b6-4899-9f67-05032f87be5a" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/src/com/company/CrypterCar.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/company/IntPair.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Challenge-362-Intermediate-Java/com/company/Cipher.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Challenge-362-Intermediate-Java/com/company/Cipher.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Challenge-362-Intermediate-Java/com/company/CrypterCar$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Challenge-362-Intermediate-Java/com/company/CrypterCar$1.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Challenge-362-Intermediate-Java/com/company/CrypterCar.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Challenge-362-Intermediate-Java/com/company/CrypterCar.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Challenge-362-Intermediate-Java/com/company/Direction.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Challenge-362-Intermediate-Java/com/company/Direction.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Challenge-362-Intermediate-Java/com/company/IntPair.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Challenge-362-Intermediate-Java/com/company/IntPair.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/test/Challenge-362-Intermediate-Java/TestCipher.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/test/Challenge-362-Intermediate-Java/TestCipher.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/company/Cipher.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/company/Cipher.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/company/CrypterCar.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/company/CrypterCar.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/com/company/tests/TestCipher.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/company/tests/TestCipher.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
@@ -26,8 +27,8 @@
             <file leaf-file-name="TestCipher.java" pinned="false" current-in-tab="true">
               <entry file="file://$PROJECT_DIR$/src/com/company/tests/TestCipher.java">
                 <provider selected="true" editor-type-id="text-editor">
-                  <state relative-caret-position="432">
-                    <caret line="16" selection-start-line="16" selection-end-line="16" />
+                  <state relative-caret-position="635">
+                    <caret line="36" selection-start-line="36" selection-end-line="36" />
                     <folding>
                       <element signature="imports" expanded="true" />
                     </folding>
@@ -42,19 +43,10 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="Main.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/com/company/Main.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="108">
-              <caret line="4" column="24" selection-start-line="4" selection-start-column="24" selection-end-line="4" selection-end-column="24" />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="Cipher.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/com/company/Cipher.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="376">
+            <state relative-caret-position="311">
               <caret line="66" selection-start-line="66" selection-end-line="66" />
               <folding>
                 <element signature="imports" expanded="true" />
@@ -69,21 +61,14 @@
       <file leaf-file-name="CrypterCar.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/com/company/CrypterCar.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="150">
-              <caret line="9" lean-forward="true" selection-start-line="9" selection-end-line="9" />
+            <state relative-caret-position="595">
+              <caret line="32" column="26" lean-forward="true" selection-start-line="32" selection-start-column="26" selection-end-line="32" selection-end-column="26" />
               <folding>
-                <element signature="method#CrypterCar#0;class#CrypterCar#0" />
+                <element signature="imports" expanded="true" />
+                <element signature="e#382#534#0" expanded="true" />
+                <element signature="e#533#534#0" expanded="true" />
                 <element signature="method#moveRotateRight#0;class#CrypterCar#0" />
               </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="IntPair.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/com/company/IntPair.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="270">
-              <caret line="9" column="19" lean-forward="true" selection-start-line="9" selection-start-column="19" selection-end-line="9" selection-end-column="19" />
             </state>
           </provider>
         </entry>
@@ -105,9 +90,11 @@
       <list>
         <option value="$PROJECT_DIR$/src/com/company/tests/MainTest.java" />
         <option value="$PROJECT_DIR$/src/com/company/Main.java" />
-        <option value="$PROJECT_DIR$/src/com/company/tests/TestCipher.java" />
         <option value="$PROJECT_DIR$/src/com/company/Cipher.java" />
         <option value="$PROJECT_DIR$/src/com/company/IntPair.java" />
+        <option value="$PROJECT_DIR$/src/com/company/tests/TestCipher.java" />
+        <option value="$PROJECT_DIR$/src/com/company/d.java" />
+        <option value="$PROJECT_DIR$/src/com/company/MySet.java" />
         <option value="$PROJECT_DIR$/src/com/company/CrypterCar.java" />
       </list>
     </option>
@@ -143,13 +130,6 @@
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="company" type="462c0819:PsiDirectoryNode" />
             </path>
-            <path>
-              <item name="Challenge-362-Intermediate-Java" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Challenge-362-Intermediate-Java" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="company" type="462c0819:PsiDirectoryNode" />
-              <item name="CrypterCar.java" type="529ef68f:ClassesTreeStructureProvider$PsiClassOwnerTreeNode" />
-            </path>
           </expand>
           <select />
         </subPane>
@@ -177,30 +157,13 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="JUnit.TestCipher.TestPlainTextRemoveCharacters">
+  <component name="RunManager" selected="JUnit.TestCipher.TestCrypterCarSet">
     <configuration name="Main" type="Application" factoryName="Application" temporary="true">
       <option name="MAIN_CLASS_NAME" value="com.company.Main" />
       <module name="Challenge-362-Intermediate-Java" />
       <option name="WORKING_DIRECTORY" value="file://$PROJECT_DIR$" />
       <RunnerSettings RunnerId="Run" />
       <ConfigurationWrapper RunnerId="Run" />
-    </configuration>
-    <configuration name="MainTest.testMain" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="Challenge-362-Intermediate-Java" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="MainTest" />
-      <option name="METHOD_NAME" value="testMain" />
-      <option name="TEST_OBJECT" value="method" />
-      <option name="VM_PARAMETERS" />
-      <option name="PARAMETERS" />
-      <option name="WORKING_DIRECTORY" />
-      <option name="PASS_PARENT_ENVS" value="true" />
-      <option name="TEST_SEARCH_SCOPE">
-        <value defaultName="singleModule" />
-      </option>
-      <patterns />
     </configuration>
     <configuration name="TestCipher" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="Challenge-362-Intermediate-Java" />
@@ -236,6 +199,23 @@
       </option>
       <patterns />
     </configuration>
+    <configuration name="TestCipher.TestCrypterCarSet" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="Challenge-362-Intermediate-Java" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="TestCipher" />
+      <option name="METHOD_NAME" value="TestCrypterCarSet" />
+      <option name="TEST_OBJECT" value="method" />
+      <option name="VM_PARAMETERS" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="singleModule" />
+      </option>
+      <patterns />
+    </configuration>
     <configuration name="TestCipher.TestPlainTextRemoveCharacters" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="Challenge-362-Intermediate-Java" />
       <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
@@ -255,18 +235,18 @@
     </configuration>
     <list>
       <item itemvalue="Application.Main" />
-      <item itemvalue="JUnit.MainTest.testMain" />
       <item itemvalue="JUnit.TestCipher" />
       <item itemvalue="JUnit.TestCipher.TestCipherConstructor" />
       <item itemvalue="JUnit.TestCipher.TestPlainTextRemoveCharacters" />
+      <item itemvalue="JUnit.TestCipher.TestCrypterCarSet" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.TestCipher.TestCrypterCarSet" />
         <item itemvalue="JUnit.TestCipher.TestPlainTextRemoveCharacters" />
         <item itemvalue="JUnit.TestCipher.TestCipherConstructor" />
         <item itemvalue="JUnit.TestCipher" />
         <item itemvalue="Application.Main" />
-        <item itemvalue="JUnit.MainTest.testMain" />
       </list>
     </recent_temporary>
   </component>
@@ -284,35 +264,35 @@
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="TestCipher_TestCipherConstructor - 2018.06.06 at 17h 48m 37s.xml">
-      <configuration name="TestCipher.TestCipherConstructor" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="TestCipher_TestCipherConstructor - 2018.06.06 at 17h 48m 56s.xml">
-      <configuration name="TestCipher.TestCipherConstructor" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="TestCipher_TestCipherConstructor - 2018.06.06 at 17h 50m 26s.xml">
-      <configuration name="TestCipher.TestCipherConstructor" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="TestCipher_TestPlainTextRemoveCharacters - 2018.06.06 at 18h 05m 44s.xml">
-      <configuration name="TestCipher.TestPlainTextRemoveCharacters" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="TestCipher_TestPlainTextRemoveCharacters - 2018.06.06 at 18h 05m 54s.xml">
-      <configuration name="TestCipher.TestPlainTextRemoveCharacters" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="TestCipher_TestPlainTextRemoveCharacters - 2018.06.06 at 18h 13m 19s.xml">
-      <configuration name="TestCipher.TestPlainTextRemoveCharacters" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="TestCipher_TestPlainTextRemoveCharacters - 2018.06.06 at 18h 13m 56s.xml">
-      <configuration name="TestCipher.TestPlainTextRemoveCharacters" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="TestCipher_TestPlainTextRemoveCharacters - 2018.06.06 at 18h 14m 50s.xml">
-      <configuration name="TestCipher.TestPlainTextRemoveCharacters" configurationId="JUnit" />
-    </history-entry>
     <history-entry file="TestCipher_TestPlainTextRemoveCharacters - 2018.06.06 at 18h 16m 11s.xml">
       <configuration name="TestCipher.TestPlainTextRemoveCharacters" configurationId="JUnit" />
     </history-entry>
     <history-entry file="TestCipher_TestPlainTextRemoveCharacters - 2018.06.06 at 20h 59m 21s.xml">
       <configuration name="TestCipher.TestPlainTextRemoveCharacters" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="TestCipher_TestCrypterCarSet - 2018.06.07 at 07h 05m 54s.xml">
+      <configuration name="TestCipher.TestCrypterCarSet" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="TestCipher_TestCrypterCarSet - 2018.06.07 at 07h 06m 40s.xml">
+      <configuration name="TestCipher.TestCrypterCarSet" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="TestCipher_TestCrypterCarSet - 2018.06.07 at 07h 13m 17s.xml">
+      <configuration name="TestCipher.TestCrypterCarSet" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="TestCipher_TestCrypterCarSet - 2018.06.07 at 07h 22m 53s.xml">
+      <configuration name="TestCipher.TestCrypterCarSet" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="TestCipher_TestCrypterCarSet - 2018.06.07 at 07h 28m 44s.xml">
+      <configuration name="TestCipher.TestCrypterCarSet" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="TestCipher_TestCrypterCarSet - 2018.06.07 at 07h 29m 43s.xml">
+      <configuration name="TestCipher.TestCrypterCarSet" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="TestCipher_TestCrypterCarSet - 2018.06.07 at 07h 31m 51s.xml">
+      <configuration name="TestCipher.TestCrypterCarSet" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="TestCipher_TestCrypterCarSet - 2018.06.07 at 07h 36m 09s.xml">
+      <configuration name="TestCipher.TestCrypterCarSet" configurationId="JUnit" />
     </history-entry>
   </component>
   <component name="ToolWindowManager">
@@ -326,7 +306,7 @@
       <window_info anchor="bottom" id="Event Log" side_tool="true" />
       <window_info anchor="right" id="Maven Projects" />
       <window_info anchor="bottom" id="Version Control" />
-      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.32897604" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.32897604" />
       <window_info anchor="bottom" id="Terminal" />
       <window_info id="Designer" />
       <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.20255864" />
@@ -348,7 +328,15 @@
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
-      <option name="time" value="9" />
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/com/company/tests/TestCipher.java</url>
+          <line>27</line>
+          <properties />
+          <option name="timeStamp" value="12" />
+        </line-breakpoint>
+      </breakpoints>
+      <option name="time" value="13" />
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
@@ -369,13 +357,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/junit/platform/junit-platform-commons/1.0.0/junit-platform-commons-1.0.0.jar!/org/junit/platform/commons/util/ReflectionUtils.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="158">
-          <caret line="175" selection-start-line="175" selection-end-line="175" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/com/company/Main.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="108">
@@ -383,19 +364,19 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/company/tests/TestCipher.java">
+    <entry file="jar://$MAVEN_REPOSITORY$/org/junit/jupiter/junit-jupiter-api/5.0.0/junit-jupiter-api-5.0.0.jar!/org/junit/jupiter/api/Assertions.class">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="432">
-          <caret line="16" selection-start-line="16" selection-end-line="16" />
+        <state relative-caret-position="175">
+          <caret line="47" selection-start-line="47" selection-end-line="47" />
           <folding>
-            <element signature="imports" expanded="true" />
+            <element signature="e#1244#1245#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/com/company/Cipher.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="376">
+        <state relative-caret-position="311">
           <caret line="66" selection-start-line="66" selection-end-line="66" />
           <folding>
             <element signature="imports" expanded="true" />
@@ -406,19 +387,69 @@
         </state>
       </provider>
     </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/junit/platform/junit-platform-commons/1.0.0/junit-platform-commons-1.0.0.jar!/org/junit/platform/commons/util/ReflectionUtils.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="158">
+          <caret line="175" selection-start-line="175" selection-end-line="175" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/company/tests/TestCipher.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="635">
+          <caret line="36" selection-start-line="36" selection-end-line="36" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/company/d.java">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/company/MySet.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="145">
+          <caret line="5" column="4" lean-forward="true" selection-start-line="5" selection-start-column="4" selection-end-line="5" selection-end-column="4" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/com/company/IntPair.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="270">
-          <caret line="9" column="19" lean-forward="true" selection-start-line="9" selection-start-column="19" selection-end-line="9" selection-end-column="19" />
+        <state relative-caret-position="300">
+          <caret line="10" selection-start-line="10" selection-end-line="10" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://C:/Program Files/Java/jdk-10.0.1/lib/src.zip!/java.base/jdk/internal/reflect/DelegatingMethodAccessorImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="255">
+          <caret line="42" selection-start-line="42" selection-end-line="42" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://C:/Program Files/Java/jdk-10.0.1/lib/src.zip!/java.base/java/lang/reflect/Method.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="175">
+          <caret line="563" selection-start-line="563" selection-end-line="563" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://C:/Program Files/Java/jdk-10.0.1/lib/src.zip!/java.base/jdk/internal/reflect/NativeMethodAccessorImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="600">
+          <caret line="68" column="33" selection-start-line="68" selection-start-column="33" selection-end-line="68" selection-end-column="33" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/com/company/CrypterCar.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="150">
-          <caret line="9" lean-forward="true" selection-start-line="9" selection-end-line="9" />
+        <state relative-caret-position="595">
+          <caret line="32" column="26" lean-forward="true" selection-start-line="32" selection-start-column="26" selection-end-line="32" selection-end-column="26" />
           <folding>
-            <element signature="method#CrypterCar#0;class#CrypterCar#0" />
+            <element signature="imports" expanded="true" />
+            <element signature="e#382#534#0" expanded="true" />
+            <element signature="e#533#534#0" expanded="true" />
             <element signature="method#moveRotateRight#0;class#CrypterCar#0" />
           </folding>
         </state>
