@@ -13,5 +13,12 @@ public class TestCipher {
         assertEquals(3,testCipher.demY);
         assertEquals("clockwise",testCipher.rotation);
     }
+    @Test
+    public void TestPlainTextRemoveCharacters(){
+        Cipher testCipher = new Cipher("\"WE ARE DISCOVERED. FLEE AT ONCE\" (9, 3) clockwise");
+        testCipher.init();
 
+        assertEquals("WEAREDISCOVEREDFLEEATONCE",testCipher.plainText);
+
+    }
 }

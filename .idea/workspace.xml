@@ -2,13 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="40296a55-87b6-4899-9f67-05032f87be5a" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/company/Cipher.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/company/tests/TestCipher.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/test/Challenge-362-Intermediate-Java/MainTest.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/company/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/company/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/company/tests/MainTest.java" beforeDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/Challenge-362-Intermediate-Java/com/company/Cipher.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/test/Challenge-362-Intermediate-Java/TestCipher.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/company/Cipher.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/company/Cipher.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/company/tests/TestCipher.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/company/tests/TestCipher.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -26,8 +23,8 @@
             <file leaf-file-name="TestCipher.java" pinned="false" current-in-tab="true">
               <entry file="file://$PROJECT_DIR$/src/com/company/tests/TestCipher.java">
                 <provider selected="true" editor-type-id="text-editor">
-                  <state relative-caret-position="216">
-                    <caret line="8" selection-start-line="8" selection-end-line="8" />
+                  <state relative-caret-position="486">
+                    <caret line="18" column="26" selection-start-line="18" selection-start-column="26" selection-end-line="18" selection-end-column="26" />
                     <folding>
                       <element signature="imports" expanded="true" />
                     </folding>
@@ -54,10 +51,11 @@
       <file leaf-file-name="Cipher.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/com/company/Cipher.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="478">
-              <caret line="21" column="55" lean-forward="true" selection-start-line="21" selection-start-column="55" selection-end-line="21" selection-end-column="55" />
+            <state relative-caret-position="328">
+              <caret line="28" lean-forward="true" selection-start-line="28" selection-end-line="28" />
               <folding>
                 <element signature="imports" expanded="true" />
+                <element signature="method#Cipher#0;class#Cipher#0" />
               </folding>
             </state>
           </provider>
@@ -79,9 +77,9 @@
     <option name="CHANGED_PATHS">
       <list>
         <option value="$PROJECT_DIR$/src/com/company/tests/MainTest.java" />
-        <option value="$PROJECT_DIR$/src/com/company/tests/TestCipher.java" />
         <option value="$PROJECT_DIR$/src/com/company/Main.java" />
         <option value="$PROJECT_DIR$/src/com/company/Cipher.java" />
+        <option value="$PROJECT_DIR$/src/com/company/tests/TestCipher.java" />
       </list>
     </option>
   </component>
@@ -116,13 +114,6 @@
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="company" type="462c0819:PsiDirectoryNode" />
             </path>
-            <path>
-              <item name="Challenge-362-Intermediate-Java" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Challenge-362-Intermediate-Java" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="company" type="462c0819:PsiDirectoryNode" />
-              <item name="tests" type="462c0819:PsiDirectoryNode" />
-            </path>
           </expand>
           <select />
         </subPane>
@@ -150,30 +141,13 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="JUnit.TestCipher.TestCipherConstructor">
+  <component name="RunManager" selected="JUnit.TestCipher.TestPlainTextRemoveCharacters">
     <configuration name="Main" type="Application" factoryName="Application" temporary="true">
       <option name="MAIN_CLASS_NAME" value="com.company.Main" />
       <module name="Challenge-362-Intermediate-Java" />
       <option name="WORKING_DIRECTORY" value="file://$PROJECT_DIR$" />
       <RunnerSettings RunnerId="Run" />
       <ConfigurationWrapper RunnerId="Run" />
-    </configuration>
-    <configuration name="MainTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="Challenge-362-Intermediate-Java" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="MainTest" />
-      <option name="METHOD_NAME" />
-      <option name="TEST_OBJECT" value="class" />
-      <option name="VM_PARAMETERS" />
-      <option name="PARAMETERS" />
-      <option name="WORKING_DIRECTORY" />
-      <option name="PASS_PARENT_ENVS" value="true" />
-      <option name="TEST_SEARCH_SCOPE">
-        <value defaultName="singleModule" />
-      </option>
-      <patterns />
     </configuration>
     <configuration name="MainTest.testMain" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="Challenge-362-Intermediate-Java" />
@@ -226,20 +200,37 @@
       </option>
       <patterns />
     </configuration>
+    <configuration name="TestCipher.TestPlainTextRemoveCharacters" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="Challenge-362-Intermediate-Java" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="TestCipher" />
+      <option name="METHOD_NAME" value="TestPlainTextRemoveCharacters" />
+      <option name="TEST_OBJECT" value="method" />
+      <option name="VM_PARAMETERS" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="singleModule" />
+      </option>
+      <patterns />
+    </configuration>
     <list>
       <item itemvalue="Application.Main" />
-      <item itemvalue="JUnit.MainTest" />
       <item itemvalue="JUnit.MainTest.testMain" />
       <item itemvalue="JUnit.TestCipher" />
       <item itemvalue="JUnit.TestCipher.TestCipherConstructor" />
+      <item itemvalue="JUnit.TestCipher.TestPlainTextRemoveCharacters" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.TestCipher.TestPlainTextRemoveCharacters" />
         <item itemvalue="JUnit.TestCipher.TestCipherConstructor" />
         <item itemvalue="JUnit.TestCipher" />
         <item itemvalue="Application.Main" />
         <item itemvalue="JUnit.MainTest.testMain" />
-        <item itemvalue="JUnit.MainTest" />
       </list>
     </recent_temporary>
   </component>
@@ -257,12 +248,6 @@
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="TestCipher_TestCipherConstructor - 2018.06.06 at 17h 05m 10s.xml">
-      <configuration name="TestCipher.TestCipherConstructor" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="TestCipher_TestCipherConstructor - 2018.06.06 at 17h 12m 03s.xml">
-      <configuration name="TestCipher.TestCipherConstructor" configurationId="JUnit" />
-    </history-entry>
     <history-entry file="TestCipher_TestCipherConstructor - 2018.06.06 at 17h 13m 05s.xml">
       <configuration name="TestCipher.TestCipherConstructor" configurationId="JUnit" />
     </history-entry>
@@ -286,6 +271,12 @@
     </history-entry>
     <history-entry file="TestCipher_TestCipherConstructor - 2018.06.06 at 17h 48m 56s.xml">
       <configuration name="TestCipher.TestCipherConstructor" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="TestCipher_TestCipherConstructor - 2018.06.06 at 17h 50m 26s.xml">
+      <configuration name="TestCipher.TestCipherConstructor" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="TestCipher_TestPlainTextRemoveCharacters - 2018.06.06 at 18h 05m 44s.xml">
+      <configuration name="TestCipher.TestPlainTextRemoveCharacters" configurationId="JUnit" />
     </history-entry>
   </component>
   <component name="ToolWindowManager">
@@ -321,15 +312,7 @@
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/com/company/tests/TestCipher.java</url>
-          <line>8</line>
-          <properties />
-          <option name="timeStamp" value="1" />
-        </line-breakpoint>
-      </breakpoints>
-      <option name="time" value="4" />
+      <option name="time" value="5" />
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
@@ -364,20 +347,21 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/company/tests/TestCipher.java">
+    <entry file="file://$PROJECT_DIR$/src/com/company/Cipher.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="216">
-          <caret line="8" selection-start-line="8" selection-end-line="8" />
+        <state relative-caret-position="328">
+          <caret line="28" lean-forward="true" selection-start-line="28" selection-end-line="28" />
           <folding>
             <element signature="imports" expanded="true" />
+            <element signature="method#Cipher#0;class#Cipher#0" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/company/Cipher.java">
+    <entry file="file://$PROJECT_DIR$/src/com/company/tests/TestCipher.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="478">
-          <caret line="21" column="55" lean-forward="true" selection-start-line="21" selection-start-column="55" selection-end-line="21" selection-end-column="55" />
+        <state relative-caret-position="486">
+          <caret line="18" column="26" selection-start-line="18" selection-start-column="26" selection-end-line="18" selection-end-column="26" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>

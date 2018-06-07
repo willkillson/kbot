@@ -9,7 +9,11 @@ public class Cipher {
     public int demX;
     public int demY;
     public String rotation;
+
+
     public String cipherText;
+
+
 
     public Cipher(String input){
 
@@ -22,5 +26,16 @@ public class Cipher {
         this.demY = Integer.parseInt(matcher.group(3));
         this.rotation = matcher.group(4);
     }
+
+    public void init(){
+        plainText = plainText.replaceAll("\\s*+", "");
+        plainText = plainText.replaceAll("\"*+", "");
+        plainText = plainText.replaceAll("[.]*+", "");
+        plainText = plainText.replaceAll("[?]*+", "");
+        plainText = plainText.replaceAll("[!]*+", "");
+    }
+
+
+
 
 }
