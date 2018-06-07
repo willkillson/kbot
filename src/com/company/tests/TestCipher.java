@@ -18,6 +18,7 @@ public class TestCipher {
         Cipher testCipher = new Cipher("\"WE ARE DISCOVERED. FLEE AT ONCE\" (9, 3) clockwise");
         testCipher.init();
 
+        testCipher.print();
         assertEquals("WEAREDISCOVEREDFLEEATONCE",testCipher.plainText);
 
     }

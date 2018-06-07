@@ -9,6 +9,7 @@ public class Cipher {
     public int demX;
     public int demY;
     public String rotation;
+    public char[][] cipherArray;
 
 
     public String cipherText;
@@ -33,8 +34,34 @@ public class Cipher {
         plainText = plainText.replaceAll("[.]*+", "");
         plainText = plainText.replaceAll("[?]*+", "");
         plainText = plainText.replaceAll("[!]*+", "");
+
+        this.plainText = this.plainText.toUpperCase();
+        this.cipherArray = new char[this.demY][this.demX];
+
+        int index = 0;
+        for(int i = 0;i< this.demY;i++){
+            for(int j = 0;j<this.demX;j++, index++){
+                this.cipherArray[i][j]= 'X';
+                if(index<plainText.length()){
+                    this.cipherArray[i][j]= plainText.charAt(index);
+                }
+            }
+        }
+
+
+
     }
 
+
+    public void print(){
+        for(int i = 0;i< this.demY;i++){
+            for(int j = 0;j<this.demX;j++){
+                System.out.print(this.cipherArray[i][j]+" ");
+            }
+            System.out.print("\n");
+        }
+
+    }
 
 
 
