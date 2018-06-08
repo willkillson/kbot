@@ -3,7 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="40296a55-87b6-4899-9f67-05032f87be5a" name="Default" comment="">
       <change beforePath="$PROJECT_DIR$/src/com/company/Cipher.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/company/Cipher.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/company/tests/TestCipher.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/company/tests/TestCipher.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/company/CrypterCar.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/company/CrypterCar.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -24,8 +24,8 @@
             <file leaf-file-name="TestCipher.java" pinned="false" current-in-tab="true">
               <entry file="file://$PROJECT_DIR$/src/com/company/tests/TestCipher.java">
                 <provider selected="true" editor-type-id="text-editor">
-                  <state relative-caret-position="476">
-                    <caret line="102" column="54" lean-forward="true" selection-start-line="102" selection-start-column="54" selection-end-line="102" selection-end-column="54" />
+                  <state relative-caret-position="700">
+                    <caret line="92" selection-start-line="92" selection-end-line="92" />
                     <folding>
                       <element signature="imports" expanded="true" />
                       <element signature="method#TestCipherConstructor#0;class#TestCipher#0" />
@@ -35,6 +35,7 @@
                       <element signature="method#TestEncryptString1#0;class#TestCipher#0" />
                       <element signature="method#TestEncryptString2#0;class#TestCipher#0" />
                       <element signature="method#TestEncryptString3#0;class#TestCipher#0" />
+                      <element signature="method#TestEncryptString4#0;class#TestCipher#0" />
                       <element signature="method#TestEncryptString5#0;class#TestCipher#0" />
                       <element signature="method#TestEncryptString6#0;class#TestCipher#0" />
                     </folding>
@@ -45,11 +46,12 @@
             <file leaf-file-name="CrypterCar.java" pinned="false" current-in-tab="false">
               <entry file="file://$PROJECT_DIR$/src/com/company/CrypterCar.java">
                 <provider selected="true" editor-type-id="text-editor">
-                  <state relative-caret-position="280">
-                    <caret line="8" column="12" selection-start-line="8" selection-start-column="12" selection-end-line="8" selection-end-column="12" />
+                  <state relative-caret-position="3325">
+                    <caret line="185" column="30" lean-forward="true" selection-start-line="185" selection-start-column="30" selection-end-line="185" selection-end-column="30" />
                     <folding>
                       <element signature="imports" expanded="true" />
-                      <element signature="class#CrypterCar#0" />
+                      <element signature="method#CrypterCar#0;class#CrypterCar#0" />
+                      <element signature="method#moveRotateRight#0;class#CrypterCar#0" />
                     </folding>
                   </state>
                 </provider>
@@ -62,33 +64,15 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="Main.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/com/company/Main.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="315">
-              <caret line="21" lean-forward="true" selection-start-line="21" selection-end-line="21" />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="Cipher.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/com/company/Cipher.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="71">
-              <caret line="20" column="75" lean-forward="true" selection-start-line="20" selection-start-column="43" selection-end-line="20" selection-end-column="75" />
+            <state relative-caret-position="635">
+              <caret line="71" column="34" lean-forward="true" selection-start-line="71" selection-start-column="34" selection-end-line="71" selection-end-column="34" />
               <folding>
                 <element signature="imports" expanded="true" />
                 <element signature="method#print#0;class#Cipher#0" />
               </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="IntPair.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/com/company/IntPair.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="30">
-              <caret line="2" column="13" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
             </state>
           </provider>
         </entry>
@@ -113,9 +97,9 @@
         <option value="$PROJECT_DIR$/src/com/company/d.java" />
         <option value="$PROJECT_DIR$/src/com/company/IntPair.java" />
         <option value="$PROJECT_DIR$/src/com/company/MySet.java" />
-        <option value="$PROJECT_DIR$/src/com/company/CrypterCar.java" />
-        <option value="$PROJECT_DIR$/src/com/company/Cipher.java" />
         <option value="$PROJECT_DIR$/src/com/company/tests/TestCipher.java" />
+        <option value="$PROJECT_DIR$/src/com/company/Cipher.java" />
+        <option value="$PROJECT_DIR$/src/com/company/CrypterCar.java" />
       </list>
     </option>
   </component>
@@ -156,6 +140,13 @@
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="company" type="462c0819:PsiDirectoryNode" />
               <item name="tests" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Challenge-362-Intermediate-Java" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Challenge-362-Intermediate-Java" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="company" type="462c0819:PsiDirectoryNode" />
+              <item name="CrypterCar.java" type="529ef68f:ClassesTreeStructureProvider$PsiClassOwnerTreeNode" />
             </path>
           </expand>
           <select />
@@ -301,12 +292,6 @@
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="TestCipher_TestCipherConstructor - 2018.06.07 at 16h 55m 07s.xml">
-      <configuration name="TestCipher.TestCipherConstructor" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="TestCipher_TestEncryptString - 2018.06.07 at 16h 56m 16s.xml">
-      <configuration name="TestCipher.TestEncryptString" configurationId="JUnit" />
-    </history-entry>
     <history-entry file="TestCipher_TestEncryptString - 2018.06.07 at 16h 56m 32s.xml">
       <configuration name="TestCipher.TestEncryptString" configurationId="JUnit" />
     </history-entry>
@@ -331,6 +316,12 @@
     <history-entry file="TestCipher - 2018.06.07 at 17h 05m 22s.xml">
       <configuration name="TestCipher" configurationId="JUnit" />
     </history-entry>
+    <history-entry file="TestCipher - 2018.06.07 at 17h 14m 40s.xml">
+      <configuration name="TestCipher" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="TestCipher - 2018.06.07 at 17h 16m 06s.xml">
+      <configuration name="TestCipher" configurationId="JUnit" />
+    </history-entry>
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
@@ -347,12 +338,12 @@
       <window_info anchor="right" id="Coverage" side_tool="true" weight="0.32995737" />
       <window_info anchor="bottom" id="Terminal" />
       <window_info id="Designer" />
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.20255864" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.20255864" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info id="UI Designer" />
       <window_info id="Favorites" side_tool="true" />
-      <window_info active="true" anchor="bottom" id="Debug" order="3" visible="true" weight="0.39978212" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.39978212" />
       <window_info anchor="bottom" id="Find" order="1" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -366,14 +357,6 @@
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/com/company/tests/TestCipher.java</url>
-          <line>102</line>
-          <properties />
-          <option name="timeStamp" value="22" />
-        </line-breakpoint>
-      </breakpoints>
       <option name="time" value="23" />
     </breakpoint-manager>
   </component>
@@ -436,17 +419,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/company/CrypterCar.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="280">
-          <caret line="8" column="12" selection-start-line="8" selection-start-column="12" selection-end-line="8" selection-end-column="12" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="class#CrypterCar#0" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="jar://$MAVEN_REPOSITORY$/org/junit/platform/junit-platform-commons/1.0.0/junit-platform-commons-1.0.0.jar!/org/junit/platform/commons/util/ExceptionUtils.class">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="225">
@@ -477,8 +449,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/com/company/Cipher.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="71">
-          <caret line="20" column="75" lean-forward="true" selection-start-line="20" selection-start-column="43" selection-end-line="20" selection-end-column="75" />
+        <state relative-caret-position="635">
+          <caret line="71" column="34" lean-forward="true" selection-start-line="71" selection-start-column="34" selection-end-line="71" selection-end-column="34" />
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="method#print#0;class#Cipher#0" />
@@ -486,10 +458,22 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/company/CrypterCar.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="3325">
+          <caret line="185" column="30" lean-forward="true" selection-start-line="185" selection-start-column="30" selection-end-line="185" selection-end-column="30" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="method#CrypterCar#0;class#CrypterCar#0" />
+            <element signature="method#moveRotateRight#0;class#CrypterCar#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/com/company/tests/TestCipher.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="476">
-          <caret line="102" column="54" lean-forward="true" selection-start-line="102" selection-start-column="54" selection-end-line="102" selection-end-column="54" />
+        <state relative-caret-position="700">
+          <caret line="92" selection-start-line="92" selection-end-line="92" />
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="method#TestCipherConstructor#0;class#TestCipher#0" />
@@ -499,6 +483,7 @@
             <element signature="method#TestEncryptString1#0;class#TestCipher#0" />
             <element signature="method#TestEncryptString2#0;class#TestCipher#0" />
             <element signature="method#TestEncryptString3#0;class#TestCipher#0" />
+            <element signature="method#TestEncryptString4#0;class#TestCipher#0" />
             <element signature="method#TestEncryptString5#0;class#TestCipher#0" />
             <element signature="method#TestEncryptString6#0;class#TestCipher#0" />
           </folding>

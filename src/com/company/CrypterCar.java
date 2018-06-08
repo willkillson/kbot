@@ -124,5 +124,78 @@ public class CrypterCar {
 
         return testPos;
     }
+    public IntPair moveRotateLeft(){
+
+        IntPair testPos = new IntPair(-1,-1);
+        int maxIt = 1;
+        for(int i = 0;i<maxIt;i++) {
+            if (isBlocked == false) {
+                switch (dir) {
+                    case s:
+                        testPos.x = this.xPos;
+                        testPos.y = this.yPos + 1;
+                        if (((yPos + 1) == yBound) || (visitedPositions.contains(testPos))) {
+                            isBlocked = true;
+                            maxIt=3;
+                        } else {
+                            yPos++;
+                            visitedPositions.add(testPos);
+                        }
+                        break;
+                    case e:
+                        testPos.x = this.xPos + 1;
+                        testPos.y = this.yPos;
+                        if (((xPos + 1) == xBound) || (visitedPositions.contains(testPos))) {
+                            isBlocked = true;
+                            maxIt=3;
+                        } else {
+                            xPos++;
+                            visitedPositions.add(testPos);
+                        }
+                        break;
+                    case n:
+                        testPos.x = this.xPos;
+                        testPos.y = this.yPos - 1;
+                        if (((yPos - 1) == -1) || (visitedPositions.contains(testPos))) {
+                            isBlocked = true;
+                            maxIt=3;
+                        } else {
+                            yPos--;
+                            visitedPositions.add(testPos);
+                        }
+                        break;
+                    case w:
+                        testPos.x = this.xPos - 1;
+                        testPos.y = this.yPos;
+                        if (((xPos - 1) == -1) || (visitedPositions.contains(testPos))) {
+                            isBlocked = true;
+                            maxIt=3;
+                        } else {
+                            xPos--;
+                            visitedPositions.add(testPos);
+                        }
+                        break;
+                }
+            } else {
+                switch (dir) {
+                    case s:
+                        dir = Direction.e;
+                        break;
+                    case e:
+                        dir = Direction.n;
+                        break;
+                    case n:
+                        dir = Direction.w;
+                        break;
+                    case w:
+                        dir = Direction.s;
+                        break;
+                }
+                this.isBlocked = false;
+            }
+        }
+
+        return testPos;
+    }
 
 }

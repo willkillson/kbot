@@ -43,6 +43,7 @@ public class Cipher {
         plainText = plainText.replaceAll("[!]*+", "");
         plainText = plainText.replaceAll("[']*+", "");
         plainText = plainText.replaceAll("[-]*+", "");
+        plainText = plainText.replaceAll("[/]*+", "");
 
         this.plainText = this.plainText.toUpperCase();
         this.cipherArray = new char[this.demY][this.demX];
@@ -62,9 +63,15 @@ public class Cipher {
 
         CrypterCar car = new CrypterCar(isRotateRight,demX,demY);
         int index = 0;
+        IntPair pair = new IntPair(-1,-1);
         cipherText+= cipherArray[0][demX-1];
         while(index<demX*demY-1){
-            IntPair pair = car.moveRotateRight();
+            if(isRotateRight) {
+                pair = car.moveRotateRight();
+            }
+            else{
+                pair = car.moveRotateLeft();
+            }
             cipherText+= cipherArray[pair.y][pair.x];
             index++;
         }
