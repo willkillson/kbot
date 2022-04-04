@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/Challenge-362-Intermediate-Java.iml" filepath="$PROJECT_DIR$/Challenge-362-Intermediate-Java.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/kbot.iml" filepath="$PROJECT_DIR$/.idea/kbot.iml" />
     </modules>
   </component>
 </project>
