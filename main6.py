@@ -33,8 +33,8 @@ while(True):
     
 
     # debug the loop rate
-    print('FPS {}'.format(1 / (time() - loop_time)))
-    loop_time = time()
+    # print('FPS {}'.format(1 / (time() - loop_time)))
+    # loop_time = time()
     
 
     # press 'q' with the output window focused to exit.
