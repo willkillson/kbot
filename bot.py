@@ -1,5 +1,6 @@
 from vision import Vision
 from time import sleep, time
+from hsvfilter import HsvFilter
 import pyautogui
 
 class BotActionState:
@@ -50,6 +51,19 @@ class kbot:
     targetNeedles = []
     # Elapsed time since last move.
     elapsedTime = 0
+    
+    
+    #filters for finding items quickly
+    hsv_filter_rare = HsvFilter(26, 122, 0, 39, 170, 255, 3, 16, 0, 0)
+    hsv_filter_unique = HsvFilter(17, 71, 166, 27, 118, 203, 11, 24, 0, 0)
+    
+    vision_unique_a = Vision('./images/needle/items/unique_a.jpg')
+    vision_unique_e = Vision('./images/needle/items/unique_e.jpg')
+    vision_unique_i = Vision('./images/needle/items/unique_i.jpg')
+    vision_unique_u = Vision('./images/needle/items/unique_u.jpg')
+    
+    vision_rare_e = Vision('./images/needle/items/rare_e.jpg')
+
 
     vision_login_a1 = Vision('./images/needle/login/login_a1.jpg')
     vision_login_a2 = Vision('./images/needle/login/login_a2.jpg')
@@ -100,7 +114,8 @@ class kbot:
         
     def updateState(self, currentFrame):
         if self.BOT_STATE.BOT_ACTION_STATE == BotActionState.INITIALIZING:
-            self.findLoginPlace(currentFrame)   
+            # self.findLoginPlace(currentFrame)   
+            self.setStateEldritchLoot(currentFrame)
         elif self.BOT_STATE.BOT_ACTION_STATE == BotActionState.INITIALZED:
             self.setStateMoving(currentFrame)
         elif self.BOT_STATE.BOT_ACTION_STATE == BotActionState.LOOTING:
@@ -134,6 +149,7 @@ class kbot:
     ##############################  
     
     def setStateInitiailized(self, currentFrame):
+        print("setStateInitiailized")
         self.BOT_STATE.BOT_ACTION_STATE = BotActionState.INITIALZED 
     
     def setStateMoving(self, currentFrame):
@@ -145,7 +161,7 @@ class kbot:
         self.currentLostAttempt = 0        
     
     def setStateEldritchFight(self, currentFrame):
-        print("setStateEldritchMove")
+        print("setStateEldritchFight")
         self.BOT_STATE.BOT_ACTION_STATE = BotActionState.ELDRITCH_FIGHT
         self.currentAttackAttempt = 0
     
@@ -155,7 +171,7 @@ class kbot:
         self.movementIndex = 0
     
     def setStateEldritchLoot(self, currentFrame):
-        print("setStateEldritchMove")
+        print("setStateEldritchLoot")
         self.BOT_STATE.BOT_ACTION_STATE = BotActionState.ELDRITCH_LOOT
     
     def setStateMoving(self, currentFrame):
@@ -168,21 +184,26 @@ class kbot:
 
     # Heal Act5 Malah
     def setStateHealAct5Malah(self, currentFrame):
+        print("setStateHealAct5Malah")
         self.BOT_STATE.BOT_ACTION_STATE = BotActionState.HEAL_ACT_5_MALAH      
         self.currentHealAttempt = 0
 
     # Move Act 5 Malah
     def setStateMoveHealAct5Malah(self, currentFrame):
+        print("setStateMoveHealAct5Malah")
         self.movementIndex = 0
         self.BOT_STATE.BOT_ACTION_STATE = BotActionState.MOVE_HEAL_ACT_5_MALAH   
         
     def setStateWp(self, currentFrame):
+        print("setStateWp")
         self.BOT_STATE.BOT_ACTION_STATE = BotActionState.WP
         
     def setStateExit(self,currentFrame):
+        print("setStateExit")
         self.BOT_STATE.BOT_ACTION_STATE = BotActionState.EXIT
         
     def setMenuState(self, currentFrame):
+        print("setMenuState")
         self.BOT_STATE.BOT_ACTION_STATE = BotActionState.MENU
         
     ##############################
@@ -301,18 +322,52 @@ class kbot:
             self.setStateEldritchLoot(currentFrame)
     
     def handleEldritchLoot(self, currentFrame):
+        sleep(5)
         print("handleEldritchLoot")
-        pyautogui.moveTo(1300, 5)
-        pyautogui.press("f1")
-        sleep(0.5*self.sleep_scale)
-        pyautogui.click(button='right')
-        sleep(0.5*self.sleep_scale)
-        pyautogui.press("f3")
-        sleep(0.5*self.sleep_scale)
+    # pyautogui.moveTo(1300, 5)
+    # pyautogui.press("f1")
+    # sleep(0.5*self.sleep_scale)
+    # pyautogui.click(button='right')
+    # sleep(0.5*self.sleep_scale)
+    # pyautogui.press("f3")
+    # sleep(0.5*self.sleep_scale)
         pyautogui.keyDown("alt")
-        sleep(10)
+        # Loot time!
+        # points for unique
+        filtered_img = self.vision_unique_e.apply_hsv_filter(currentFrame,self.hsv_filter_unique)
+        uniPoints1 = self.vision_unique_a.find(filtered_img, 0.45)
+        uniPoints2 = self.vision_unique_e.find(filtered_img, 0.45)
+        uniPoints3 = self.vision_unique_i.find(filtered_img, 0.)
+        uniPoints4 = self.vision_unique_u.find(filtered_img, 0.5)
+        unipoints = [*uniPoints1,*uniPoints2,*uniPoints3, *uniPoints4]
+        
+
+        #points for rare
+        filtered_img2 = self.vision_unique_e.apply_hsv_filter(currentFrame,self.hsv_filter_rare)
+        rarePoints = self.vision_rare_e.find(filtered_img2,0.5)
+        
+        #Go get the loot
+        if len(unipoints) > 0:
+            point = unipoints[0]
+            print("UniqueLootFound!: {}".format(point))
+            pyautogui.moveTo(point[0], point[1]);
+            pyautogui.click()        
+            sleep(2)
+            pyautogui.click()     
+            sleep(0.5)
+        else:
+            if len(rarePoints) > 0:
+                print("RareLootFound!: {}".format(rarePoints))
+                point = rarePoints[0]
+                pyautogui.moveTo(point[0], point[1]);
+                pyautogui.click()        
+                sleep(2)
+                pyautogui.click()     
+                sleep(0.5)
+            else:
+                self.setStateEldritchLoot(currentFrame)
         pyautogui.keyUp("alt")
-        self.setStateExit(currentFrame)
+        self.setStateEldritchLoot(currentFrame)
         
     # Will trigger BOT_ACTION_STATE to INITIALZED 
     def findLoginPlace(self, currentFrame):

@@ -58,6 +58,17 @@ class Vision:
         rectangles, weights = cv.groupRectangles(rectangles, groupThreshold=1, eps=0.5)
         #print(rectangles)
 
+        # for performance reasons, return a limited number of results.
+        # these aren't necessarily the best results.
+        if len(rectangles) > max_results:
+            print('Warning: too many results, raise the threshold.')
+            rectangles = rectangles[:max_results]
+
+        return rectangles
+
+    # given a list of [x, y, w, h] rectangles returned by find(), convert those into a list of
+    # [x, y] positions in the center of those rectangles where we can click on those found items
+    def get_click_points(self, rectangles):
         points = []
 
         # Loop over all the rectangles
