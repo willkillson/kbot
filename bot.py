@@ -1,3 +1,7 @@
+
+# collapse all code hotkey
+# Ctrl + (K => 0) (zero) on Windows and Linux
+
 from vision import Vision
 from time import sleep, time
 from hsvfilter import HsvFilter
@@ -30,7 +34,10 @@ class ActState:
 class BotState:
     BOT_ACTION_STATE = BotActionState.INITIALIZING
     BOT_ACT_STATE = None
+    
 class kbot:
+    
+    loot_sense = 0.46
     
     currentLostAttempt = 0
     maxLostAttempt = 5
@@ -39,7 +46,7 @@ class kbot:
     maxHealAttempt = 5
     
     currentAttackAttempt = 0
-    maxAttackAttempt = 10
+    maxAttackAttempt = 5
     
     totalRunTime = None
     BOT_STATE = None
@@ -114,8 +121,8 @@ class kbot:
         
     def updateState(self, currentFrame):
         if self.BOT_STATE.BOT_ACTION_STATE == BotActionState.INITIALIZING:
-            # self.findLoginPlace(currentFrame)   
-            self.setStateEldritchLoot(currentFrame)
+            self.findLoginPlace(currentFrame)   
+            # self.setStateEldritchLoot(currentFrame)   
         elif self.BOT_STATE.BOT_ACTION_STATE == BotActionState.INITIALZED:
             self.setStateMoving(currentFrame)
         elif self.BOT_STATE.BOT_ACTION_STATE == BotActionState.LOOTING:
@@ -236,11 +243,12 @@ class kbot:
     def handleMoving(self, currentFrame):
         
         currentIndex = self.movementIndex
-        point = self.movementList[currentIndex].find(currentFrame,0.5)
-        print("handleMoving: {}".format(point))
-        if len(point) == 1:
-            print(point)
-            pyautogui.moveTo(point[0][0], point[0][1]);
+        rectangles = self.movementList[currentIndex].find(currentFrame,0.5)
+        clickPoints = self.vision_a5_start.get_click_points(rectangles)
+        print("handleMoving: {}".format(clickPoints))
+        if len(clickPoints) > 0:
+            point = clickPoints[0]
+            pyautogui.moveTo(point[0], point[1]);
             pyautogui.click();
             sleep(1*self.sleep_scale)
             self.movementIndex = self.movementIndex + 1
@@ -319,68 +327,68 @@ class kbot:
         sleep(1*self.sleep_scale)
         if self.currentAttackAttempt >= self.maxAttackAttempt:
             pyautogui.mouseUp(button='right')
+            
+            pyautogui.moveTo(1300, 5)
+            
+            pyautogui.press("f1")
+            pyautogui.click(button='right') 
+            pyautogui.press("f3")
+            pyautogui.mouseDown(button='right')
+            sleep(2)
+            pyautogui.mouseUp(button='right')
+            
             self.setStateEldritchLoot(currentFrame)
     
     def handleEldritchLoot(self, currentFrame):
-        sleep(5)
         print("handleEldritchLoot")
-    # pyautogui.moveTo(1300, 5)
-    # pyautogui.press("f1")
-    # sleep(0.5*self.sleep_scale)
-    # pyautogui.click(button='right')
-    # sleep(0.5*self.sleep_scale)
-    # pyautogui.press("f3")
-    # sleep(0.5*self.sleep_scale)
+        
+        ##TODO this is a hack because my vision thinks pots are items at times.
+        pyautogui.press("1")
+        pyautogui.press("2")
+        pyautogui.press("3")
+        pyautogui.press("4")
+        
         pyautogui.keyDown("alt")
-        # Loot time!
         # points for unique
-        filtered_img = self.vision_unique_e.apply_hsv_filter(currentFrame,self.hsv_filter_unique)
-        uniPoints1 = self.vision_unique_a.find(filtered_img, 0.45)
-        uniPoints2 = self.vision_unique_e.find(filtered_img, 0.45)
-        uniPoints3 = self.vision_unique_i.find(filtered_img, 0.)
-        uniPoints4 = self.vision_unique_u.find(filtered_img, 0.5)
-        unipoints = [*uniPoints1,*uniPoints2,*uniPoints3, *uniPoints4]
-        
+        unique_filter = self.vision_unique_e.apply_hsv_filter(currentFrame,self.hsv_filter_unique)
+        rare_filter = self.vision_unique_e.apply_hsv_filter(currentFrame,self.hsv_filter_rare)
+        rarPoints = self.vision_rare_e.find(rare_filter, self.loot_sense)
+        uniPoints = self.vision_unique_e.find(unique_filter, self.loot_sense)        
 
-        #points for rare
-        filtered_img2 = self.vision_unique_e.apply_hsv_filter(currentFrame,self.hsv_filter_rare)
-        rarePoints = self.vision_rare_e.find(filtered_img2,0.5)
-        
         #Go get the loot
-        if len(unipoints) > 0:
-            point = unipoints[0]
-            print("UniqueLootFound!: {}".format(point))
-            pyautogui.moveTo(point[0], point[1]);
-            pyautogui.click()        
-            sleep(2)
-            pyautogui.click()     
-            sleep(0.5)
-        else:
-            if len(rarePoints) > 0:
-                print("RareLootFound!: {}".format(rarePoints))
-                point = rarePoints[0]
-                pyautogui.moveTo(point[0], point[1]);
-                pyautogui.click()        
-                sleep(2)
-                pyautogui.click()     
-                sleep(0.5)
-            else:
-                self.setStateEldritchLoot(currentFrame)
+        if len(uniPoints) > 0:
+            point = uniPoints[0]
+            y_offset = 40
+            x_offset = 5
+            print("UniqueLootFound!: {}".format(uniPoints))
+            pyautogui.moveTo(point[0]+x_offset, point[1]+y_offset);
+            pyautogui.mouseDown(button='left')
+            pyautogui.mouseUp(button='left')
+            return
+        # if len(rarPoints) > 0:
+        #     point = rarPoints[0]
+        #     y_offset = 40
+        #     x_offset = 5
+        #     print("RareLootFound!: {}".format(rarPoints))
+        #     pyautogui.moveTo(point[0]+x_offset, point[1]+y_offset);
+        #     pyautogui.mouseDown(button='left')
+        #     pyautogui.mouseUp(button='left')
+        #     return
         pyautogui.keyUp("alt")
-        self.setStateEldritchLoot(currentFrame)
-        
+        self.setStateExit(currentFrame)   
+             
     # Will trigger BOT_ACTION_STATE to INITIALZED 
     def findLoginPlace(self, currentFrame):
         point = None
-        point = self.vision_login_a1.find(currentFrame, 0.5, 'rectangles')
+        point = self.vision_login_a1.find(currentFrame, 0.5)
         if len(point) == 0:
-            point = self.vision_login_a2.find(currentFrame, 0.5, 'rectangles')
+            point = self.vision_login_a2.find(currentFrame, 0.5)
             if len(point) == 0:
-                point = self.vision_login_a3.find(currentFrame, 0.5, 'rectangles')
+                point = self.vision_login_a3.find(currentFrame, 0.5)
                 if len(point) == 0:
-                    point = self.vision_login_a4.find(currentFrame, 0.5, 'rectangles')
+                    point = self.vision_login_a4.find(currentFrame, 0.5)
                     if len(point) == 0:
-                        point = self.vision_login_a5.find(currentFrame, 0.5, 'rectangles')
+                        point = self.vision_login_a5.find(currentFrame, 0.5)
                         if len(point) == 0:
                             self.BOT_STATE.BOT_ACT_STATE = ActState.UNK
                         else:

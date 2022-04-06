@@ -15,6 +15,7 @@ os.chdir(os.path.dirname(os.path.abspath(__file__)))
 wincap = WindowCapture()
 # initialize the Vision class
 vision_uni_a = Vision('./items/unique_a.jpg')
+vision_rar_e = Vision('./items/rare_e.jpg')
 # initialize the trackbar window
 # vision_limestone.init_control_gui()
 
@@ -33,12 +34,18 @@ while(True):
 
     # pre-process the image
     processed_image = vision_uni_a.apply_hsv_filter(screenshot,hsv_filter_unique)
+    processed_image2 = vision_uni_a.apply_hsv_filter(screenshot,hsv_filter_rare)
+
 
     # do object detection
-    rectangles = vision_uni_a.find(processed_image, 0.46)
-
+    uniqueRectangles = vision_uni_a.find(processed_image, 0.46)
+    rareRectangles = vision_rar_e.find(processed_image2, 0.46)
+    
+    print("uniqueRectangles{}".format(uniqueRectangles))
+    print("rareRectangles{}".format(rareRectangles))
+    
     # draw the detection results onto the original image
-    output_image = vision_uni_a.draw_rectangles(screenshot, rectangles)
+    output_image = vision_uni_a.draw_rectangles(screenshot, rareRectangles)
 
     # display the processed image
     cv.imshow('Processed', processed_image)
