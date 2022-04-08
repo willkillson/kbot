@@ -22,27 +22,27 @@ while(True):
     bot.updateState(screenshot)
 
 
-    bot.vision_unique_a
-    # pre-process the image
-    processed_uni = bot.vision_unique_a.apply_hsv_filter(screenshot,bot.hsv_filter_unique)
-    processed_rare = bot.vision_rare_e.apply_hsv_filter(screenshot,bot.hsv_filter_rare)
+    # bot.vision_unique_a
+    # # pre-process the image
+    # processed_uni = bot.vision_unique_a.apply_hsv_filter(screenshot,bot.hsv_filter_unique)
+    # processed_rare = bot.vision_rare_e.apply_hsv_filter(screenshot,bot.hsv_filter_rare)
 
 
-    # do object detection
-    uniqueRectangles = vision_uni_a.find(processed_uni, 0.46)
-    rareRectangles = vision_rar_e.find(processed_rare, 0.46)
+    # # do object detection
+    # uniqueRectangles = vision_uni_a.find(processed_uni, 0.46)
+    # rareRectangles = vision_rar_e.find(processed_rare, 0.46)
     
-    print("uniqueRectangles{}".format(uniqueRectangles))
-    print("rareRectangles{}".format(rareRectangles))
+    # print("uniqueRectangles{}".format(uniqueRectangles))
+    # print("rareRectangles{}".format(rareRectangles))
     
 
-    # sleep(5)
-    # draw the detection results onto the original image
-    output_image = vision_uni_a.draw_rectangles(screenshot, rareRectangles)
+    # # sleep(5)
+    # # draw the detection results onto the original image
+    # output_image = vision_uni_a.draw_rectangles(screenshot, rareRectangles)
 
-    # display the processed image
-    cv.imshow('Processed', processed_rare)
-    cv.imshow('Matches', screenshot)
+    # # display the processed image
+    # cv.imshow('Processed', processed_rare)
+    # cv.imshow('Matches', screenshot)
 
     # debug the loop rate
     print('FPS {}'.format(1 / (time() - loop_time)))
