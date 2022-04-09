@@ -2,10 +2,12 @@
 # collapse all code hotkey
 # Ctrl + (K => 0) (zero) on Windows and Linux
 
-from vision import Vision
 from time import sleep
-from src.kbot.vision.hsvfilter import HsvFilter
 import pyautogui
+
+from src.kbot.vision.hsvfilter import HsvFilter
+from src.kbot.vision.vision import Vision
+
 
 class BotActionState:
     INITIALIZING = 0
@@ -64,24 +66,23 @@ class kbot:
     hsv_filter_rare = HsvFilter(26, 122, 0, 39, 170, 255, 3, 16, 0, 0)
     hsv_filter_unique = HsvFilter(17, 71, 166, 27, 118, 203, 11, 24, 0, 0)
     
-    vision_unique_a = Vision('../../images/needle/items/unique_a.jpg')
-    vision_unique_e = Vision('../../images/needle/items/unique_e.jpg')
-    vision_unique_i = Vision('../../images/needle/items/unique_i.jpg')
-    vision_unique_u = Vision('../../images/needle/items/unique_u.jpg')
+    vision_unique_a = Vision('./images/needle/items/unique_a.jpg')
+    vision_unique_e = Vision('./images/needle/items/unique_e.jpg')
+    vision_unique_i = Vision('./images/needle/items/unique_i.jpg')
+    vision_unique_u = Vision('./images/needle/items/unique_u.jpg')
     
-    vision_rare_e = Vision('../../images/needle/items/rare_e.jpg')
+    vision_rare_e = Vision('./images/needle/items/rare_e.jpg')
 
 
-    vision_login_a1 = Vision('../../images/needle/login/login_a1.jpg')
-    vision_login_a2 = Vision('../../images/needle/login/login_a2.jpg')
-    vision_login_a3 = Vision('../../images/needle/login/login_a3.jpg')
-    vision_login_a4 = Vision('../../images/needle/login/login_a4.jpg')
-    vision_login_a5 = Vision('../../images/needle/login/login_a5.jpg')
+    vision_login_a1 = Vision('./images/needle/login/login_a1.jpg')
+    vision_login_a2 = Vision('./images/needle/login/login_a2.jpg')
+    vision_login_a3 = Vision('./images/needle/login/login_a3.jpg')
+    vision_login_a4 = Vision('./images/needle/login/login_a4.jpg')
+    vision_login_a5 = Vision('./images/needle/login/login_a5.jpg')
     
-    vision_a5_start = Vision('../../images/needle/a5/a5_start.jpg')
+    vision_a5_start = Vision('./images/needle/a5/a5_start.jpg')
 
-
-    vision_a5_wp= Vision('../../images/needle/a5/a5_wp.jpg')
+    vision_a5_wp= Vision('./images/needle/a5/a5_wp.jpg')
     
     movementIndex = 0
     movementList = []
@@ -89,7 +90,7 @@ class kbot:
     eldritch_movementList = []
     eldritch_movePoints = []
     
-    malah = Vision('../../images/needle/malah.jpg')
+    malah = Vision('./images/needle/malah.jpg')
     malah_movePoints = []
     
     sleep_scale = 0.85
@@ -102,13 +103,13 @@ class kbot:
         self.BOT_STATE.BOT_ACTION_STATE = BotActionState.INITIALIZING
         self.BOT_STATE.BOT_ACT_STATE = ActState.UNK
         
-        self.movementList.append(Vision('../../images/needle/a5/a5_stairs1.jpg'))
-        self.movementList.append(Vision('../../images/needle/a5/a5_midstairs2.jpg'))
-        self.movementList.append(Vision('../../images/needle/a5/a5_stairs2.jpg'))
-        self.movementList.append(Vision('../../images/needle/a5/a5_wp.jpg'))
+        self.movementList.append(Vision('./images/needle/a5/a5_stairs1.jpg'))
+        self.movementList.append(Vision('./images/needle/a5/a5_midstairs2.jpg'))
+        self.movementList.append(Vision('./images/needle/a5/a5_stairs2.jpg'))
+        self.movementList.append(Vision('./images/needle/a5/a5_wp.jpg'))
         
-        self.eldritch_movementList.append(Vision('../../images/needle/eldritch/eldritch_1.jpg'))
-        self.eldritch_movementList.append(Vision('../../images/needle/eldritch/eldritch_2.jpg'))
+        self.eldritch_movementList.append(Vision('./images/needle/eldritch/eldritch_1.jpg'))
+        self.eldritch_movementList.append(Vision('./images/needle/eldritch/eldritch_2.jpg'))
         
         self.eldritch_movePoints.append((1300,55))
         self.eldritch_movePoints.append((1200,55))

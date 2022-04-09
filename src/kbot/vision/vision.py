@@ -1,6 +1,7 @@
 import cv2 as cv
 import numpy as np
-from hsvfilter import HsvFilter
+
+from src.kbot.vision.hsvfilter import HsvFilter
 
 
 class Vision:

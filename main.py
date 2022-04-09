@@ -1,6 +1,8 @@
 import cv2 as cv
-from src.kbot.vision.windowcapture import WindowCapture
+
 from src.kbot.vision.vision import Vision
+from src.kbot.vision.windowcapture import WindowCapture
+
 from time import time
 from src.kbot.bot import kbot
 
