@@ -1,3 +1,8 @@
 /opencv_tutorials
+/python-virtual-environments
 /__pycache__
+/images
 
+# Images
+*.jpg
+*.bmp
