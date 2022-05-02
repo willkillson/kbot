@@ -4,6 +4,7 @@
 /images
 /src/main/resources/tessdata_best
 /src/main/resources/tessdata_fast
+/build
 
 # Images
 *.jpg
