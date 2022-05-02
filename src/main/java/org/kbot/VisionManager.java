@@ -12,6 +12,7 @@ import java.io.ByteArrayInputStream;
 import java.io.ByteArrayOutputStream;
 import java.io.IOException;
 import java.io.InputStream;
+import java.net.URL;
 import java.util.HashMap;
 import java.util.Map;
 
@@ -22,12 +23,21 @@ public class VisionManager {
     public Map<String, Vision> needles;
 
     public VisionManager(){
+//        URL url = this.getClass().getResource("/images/a5_stash.jpg");
+//        String path = url.getPath();
+
+        String path = "./images/a5_stash.jpg";
+
+        System.out.println(path);
+
+
         this.hayStacks = new HashMap<>();
-        this.hayStacks.put("default", new Vision("./images/haystack/haystack_a5_town_nearstash.png"));
+        this.hayStacks.put("default",new Vision( path ));
 
         this.needles = new HashMap<>();
-        this.needles.put("default", new Vision("./images/needle/a5/a5_wp.jpg"));
-        this.needles.put("a5_stash", new Vision("./images/needle/a5/a5_stash.jpg"));
+
+
+        this.needles.put("a5_stash",  new Vision( path ));
     }
 
     public Mat find(final String visionName) {

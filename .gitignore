@@ -2,6 +2,7 @@
 /python-virtual-environments
 /__pycache__
 /images
+/src/main/resources/images
 /src/main/resources/tessdata_best
 /src/main/resources/tessdata_fast
 /build

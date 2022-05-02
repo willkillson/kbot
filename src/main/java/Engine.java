@@ -48,21 +48,21 @@ public class Engine extends Canvas implements Runnable{
     public Engine() throws AWTException, TesseractException {
         //TODO:
         // playing with tesseract
-        File title = new File("./images/title.png");
-        File white_item = new File("./images/white_item.png");
-        File gray_item = new File("./images/gray_item.png");
-        File blue_item = new File("./images/blue_item.png");
+//        File title = new File("./images/title.png");
+//        File white_item = new File("./images/white_item.png");
+//        File gray_item = new File("./images/gray_item.png");
+//        File blue_item = new File("./images/blue_item.png");
 
-        Tesseract tesseract = new Tesseract();
-        tesseract.setDatapath("src/main/resources/tessdata_fast");
-        tesseract.setLanguage("eng");
-        tesseract.setPageSegMode(1);
-        tesseract.setOcrEngineMode(1);
-
-        System.out.println( "title: " + tesseract.doOCR(title));
-        System.out.println( "white_item: " + tesseract.doOCR(white_item));
-        System.out.println( "gray_item: " +tesseract.doOCR(gray_item));
-        System.out.println( "blue_item: " +tesseract.doOCR(blue_item));
+//        Tesseract tesseract = new Tesseract();
+//        tesseract.setDatapath("src/main/resources/tessdata_fast");
+//        tesseract.setLanguage("eng");
+//        tesseract.setPageSegMode(1);
+//        tesseract.setOcrEngineMode(1);
+//
+//        System.out.println( "title: " + tesseract.doOCR(title));
+//        System.out.println( "white_item: " + tesseract.doOCR(white_item));
+//        System.out.println( "gray_item: " +tesseract.doOCR(gray_item));
+//        System.out.println( "blue_item: " +tesseract.doOCR(blue_item));
 
         System.loadLibrary(Core.NATIVE_LIBRARY_NAME);
 
