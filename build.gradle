@@ -25,6 +25,9 @@ dependencies {
     // OpenCV
     implementation files('lib/opencv-455.jar')
 
+    // Tesseract
+    implementation "net.sourceforge.tess4j:tess4j:4.5.1"
+
 }
 
 ext {

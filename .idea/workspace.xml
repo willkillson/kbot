@@ -5,96 +5,34 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="ef563f92-0993-489f-aad1-a08b55e84cf1" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.gradle/7.2/dependencies-accessors/dependencies-accessors.lock" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.gradle/7.2/dependencies-accessors/gc.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.gradle/7.2/executionHistory/executionHistory.bin" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.gradle/7.2/executionHistory/executionHistory.lock" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.gradle/7.2/fileChanges/last-build.bin" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.gradle/7.2/fileHashes/fileHashes.bin" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.gradle/7.2/fileHashes/fileHashes.lock" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.gradle/7.2/fileHashes/resourceHashesCache.bin" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.gradle/7.2/gc.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/cache.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/outputFiles.bin" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.gradle/checksums/checksums.lock" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.gradle/checksums/md5-checksums.bin" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.gradle/checksums/sha1-checksums.bin" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.gradle/vcs-1/gc.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/.name" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/gradle.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/jarRepositories.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/opencv_455.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/build.gradle" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/build/classes/java/main/Engine.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/build/classes/java/main/Kevin.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/build/classes/java/main/Robo.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/build/distributions/KevinOpenCV-1.0-SNAPSHOT.tar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/build/distributions/KevinOpenCV-1.0-SNAPSHOT.zip" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/build/libs/KevinOpenCV-1.0-SNAPSHOT.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/build/scripts/KevinOpenCV" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/build/scripts/KevinOpenCV.bat" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/build/tmp/compileJava/previous-compilation-data.bin" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/build/tmp/jar/MANIFEST.MF" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/gradle/wrapper/gradle-wrapper.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/gradle/wrapper/gradle-wrapper.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/gradlew" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/gradlew.bat" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lib/opencv-455.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lib/opencv_java455.dll" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/settings.gradle" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/Engine.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/Kevin.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/Robo.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ss.bmp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test/malah/malah_filtered.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test/malah/malah_filtered_2.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test/malah/malah_filtered_3.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test/malah/malah_filtered_4.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/MatchTemplateDemo.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/kbot/Vision.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/kbot/VisionManager.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/tessdata_best" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/tessdata_fast" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/kbot.iml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/7.2/executionHistory/executionHistory.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/7.2/executionHistory/executionHistory.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/7.2/executionHistory/executionHistory.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/7.2/executionHistory/executionHistory.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/7.2/fileHashes/fileHashes.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/7.2/fileHashes/fileHashes.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/7.2/fileHashes/fileHashes.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/7.2/fileHashes/fileHashes.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/7.2/fileHashes/resourceHashesCache.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/7.2/fileHashes/resourceHashesCache.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/outputFiles.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/outputFiles.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/checksums/checksums.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/checksums/checksums.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/checksums/md5-checksums.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/checksums/md5-checksums.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/checksums/sha1-checksums.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/checksums/sha1-checksums.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/images/haystack/haystack_a5_frigid_eldritch.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/images/haystack/haystack_a5_town_nearstash.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/images/needle/DEAD_CONTINUE.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/images/needle/a5/a5_midstairs2.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/images/needle/a5/a5_stairs1.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/images/needle/a5/a5_stairs2.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/images/needle/a5/a5_start.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/images/needle/a5/a5_wp.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/images/needle/eldritch/eldritch_1.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/images/needle/eldritch/eldritch_2.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/images/needle/frigid.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/images/needle/item_rare.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/images/needle/items/rare_e.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/images/needle/items/unique_a.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/images/needle/items/unique_e.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/images/needle/items/unique_i.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/images/needle/items/unique_u.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/images/needle/login/login_a1.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/images/needle/login/login_a2.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/images/needle/login/login_a3.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/images/needle/login/login_a4.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/images/needle/login/login_a5.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/images/needle/malah.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/images/needle/needle_a5_frigid_eldritch_minnion.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/images/needle/needle_a5_town_stash.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/images/needle/stash_a5.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/main6.py" beforeDir="false" afterPath="$PROJECT_DIR$/main6.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/build.gradle" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/Engine.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/Engine.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/tmp/compileJava/previous-compilation-data.bin" beforeDir="false" afterPath="$PROJECT_DIR$/build/tmp/compileJava/previous-compilation-data.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/opencv_tutorials/006_hsv_thresholding/albion_limestone.jpg" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/opencv_tutorials/006_hsv_thresholding/albion_limestone_processed.jpg" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/opencv_tutorials/006_hsv_thresholding/hsvfilter.py" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/opencv_tutorials/006_hsv_thresholding/main.py" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/opencv_tutorials/006_hsv_thresholding/vision.py" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/opencv_tutorials/006_hsv_thresholding/windowcapture.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/test/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/test/main.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Engine.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Engine.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -140,6 +78,7 @@
     <option name="stateVersion" value="1" />
   </component>
   <component name="ProjectId" id="27GwMoZimKC3v3q9h7SxWfZSPKe" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
@@ -148,7 +87,7 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="jdk.selected.JAVA_MODULE" value="11" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/images" />
     <property name="project.structure.last.edited" value="Libraries" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
@@ -156,9 +95,11 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\dev\kbot\images" />
       <recent name="C:\Users\willk\IdeaProjects\KevinOpenCV\lib" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\dev\kbot\images\needle\a5" />
       <recent name="C:\Users\willk\IdeaProjects\KevinOpenCV\lib" />
     </key>
     <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
@@ -176,6 +117,14 @@
     </configuration>
     <configuration name="Kevin" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="Kevin" />
+      <module name="KevinOpenCV.main" />
+      <shortenClasspath name="MANIFEST" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="MatchTemplateDemo" type="Application" factoryName="Application" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="MatchTemplateDemo" />
       <module name="KevinOpenCV.main" />
       <shortenClasspath name="MANIFEST" />
       <method v="2">
@@ -212,6 +161,7 @@
     <list>
       <item itemvalue="Application.Robo" />
       <item itemvalue="Application.Engine" />
+      <item itemvalue="Application.MatchTemplateDemo" />
       <item itemvalue="Application.Kevin" />
       <item itemvalue="Gradle.KevinOpenCV" />
     </list>
@@ -242,6 +192,27 @@
         </entry>
       </map>
     </option>
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/org/kbot/VisionManager.java</url>
+          <line>57</line>
+          <option name="timeStamp" value="4" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/org/kbot/VisionManager.java</url>
+          <line>36</line>
+          <option name="timeStamp" value="5" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/Engine.java</url>
+          <line>174</line>
+          <option name="timeStamp" value="7" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />

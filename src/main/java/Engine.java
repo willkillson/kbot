@@ -1,14 +1,18 @@
 
 
+import net.sourceforge.tess4j.Tesseract;
+import net.sourceforge.tess4j.TesseractException;
+import org.kbot.VisionManager;
 import org.opencv.core.Core;
-import org.opencv.core.CvType;
 import org.opencv.core.Mat;
+import org.opencv.imgcodecs.Imgcodecs;
 
 import javax.swing.*;
 import java.awt.*;
 import java.awt.image.BufferStrategy;
 import java.awt.image.BufferedImage;
 import java.awt.image.DataBufferInt;
+import java.io.File;
 
 
 public class Engine extends Canvas implements Runnable{
@@ -34,20 +38,39 @@ public class Engine extends Canvas implements Runnable{
     private Robot robot;
     private Rectangle rect;
 
+    private VisionManager visionManager;
 
-    public static void main(String[] args) throws AWTException {
+
+    public static void main(String[] args) throws AWTException, TesseractException {
         new Engine();
     }
 
-    public Engine() throws AWTException {
+    public Engine() throws AWTException, TesseractException {
+        //TODO:
+        // playing with tesseract
+        File title = new File("./images/title.png");
+        File white_item = new File("./images/white_item.png");
+        File gray_item = new File("./images/gray_item.png");
+        File blue_item = new File("./images/blue_item.png");
+
+        Tesseract tesseract = new Tesseract();
+        tesseract.setDatapath("src/main/resources/tessdata_fast");
+        tesseract.setLanguage("eng");
+        tesseract.setPageSegMode(1);
+        tesseract.setOcrEngineMode(1);
+
+        System.out.println( "title: " + tesseract.doOCR(title));
+        System.out.println( "white_item: " + tesseract.doOCR(white_item));
+        System.out.println( "gray_item: " +tesseract.doOCR(gray_item));
+        System.out.println( "blue_item: " +tesseract.doOCR(blue_item));
 
         System.loadLibrary(Core.NATIVE_LIBRARY_NAME);
-        Mat mat = Mat.eye(3, 3, CvType.CV_8UC1);
-        System.out.println("mat = " + mat.dump());
+
+        this.visionManager = new VisionManager();
 
 
-        this.width = 2560;
-        this.height = 1440;
+        this.width = 1278;
+        this.height = 666;
 
         this.image = new BufferedImage(this.width,this.height,BufferedImage.TYPE_INT_RGB);
         this.pixels =  ((DataBufferInt)image.getRaster().getDataBuffer()).getData();
@@ -149,8 +172,13 @@ public class Engine extends Canvas implements Runnable{
 //        for(int i = 0;i<pixels.length;i++){
 //            pixels[i] = screen.pixels[i];
 //        }
-
         BufferedImage bi = robot.createScreenCapture(rect);
+
+        Mat mat2 = VisionManager.bufferedImageToMat(bi);
+        Mat mat = this.visionManager.find(mat2,"a5_stash");
+        bi = VisionManager.Mat2BufferedImage(mat);
+
+
 //        ImageIO.write(bi,"bmp",new File("ss.bmp"));
 
         Graphics g = bs.getDrawGraphics();
